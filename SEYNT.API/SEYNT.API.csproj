@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SEYNT.API</RootNamespace>
+    <AssemblyName>SEYNT.API</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SEYNT.Application\SEYNT.Application.csproj" />
+    <ProjectReference Include="..\SEYNT.Infrastructure\SEYNT.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

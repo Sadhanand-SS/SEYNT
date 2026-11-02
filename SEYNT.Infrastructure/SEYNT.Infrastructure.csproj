@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SEYNT.Infrastructure</RootNamespace>
+    <AssemblyName>SEYNT.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SEYNT.Domain\SEYNT.Domain.csproj" />
+    <ProjectReference Include="..\SEYNT.Application\SEYNT.Application.csproj" />
+  </ItemGroup>
+
+</Project>
