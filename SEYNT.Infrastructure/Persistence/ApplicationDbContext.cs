@@ -17,6 +17,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public DbSet<UserEntity> Users => Set<UserEntity>();
     public DbSet<UserRoleEntity> UserRoles => Set<UserRoleEntity>();
     public DbSet<OrganisationEntity> Organisations => Set<OrganisationEntity>();
+    public DbSet<DeviceEntity> Devices => Set<DeviceEntity>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

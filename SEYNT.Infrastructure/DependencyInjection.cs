@@ -1,6 +1,7 @@
 using SEYNT.Application.Common.Interfaces;
 using SEYNT.Infrastructure.Authentication;
 using SEYNT.Infrastructure.Persistence;
+using SEYNT.Infrastructure.Repositories;
 using SEYNT.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,8 @@ public static class DependencyInjection
 
         services.Configure<EncryptionSettings>(configuration.GetSection(EncryptionSettings.SectionName));
         services.AddSingleton<IEncryptionService, AesEncryptionService>();
+
+        services.AddScoped<IDeviceRepository, DeviceRepository>();
 
         return services;
     }
